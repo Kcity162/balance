@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (storedBalance) {
     const balance = parseFloat(storedBalance);
     balanceElement.textContent = formatCurrency(balance);
-    inputElement.value = balance;
+    inputElement.value = formatCurrency(balance);  // Format the input value as currency
     updateDailyBalance(balance);
   }
 
@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   inputElement.addEventListener('input', () => {
-    const balance = parseFloat(inputElement.value) || 0;
+    const inputValue = inputElement.value.replace(/[^0-9.-]+/g, ''); // Remove non-numeric characters
+    const balance = parseFloat(inputValue) || 0;
     balanceElement.textContent = formatCurrency(balance);
     updateDailyBalance(balance);
     // Save balance to local storage
