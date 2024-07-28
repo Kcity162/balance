@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bank Balance App</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      
-      font-family: Arial, sans-serif;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin: 0.5em 0;
-    }
-
-    input {
-      padding: 0.5em;
-      font-size: 1em;
-      margin: 1em 0;
-    }
-
-    h4 {
-      font-size: 1.5em;
-      margin: 0.5em 0;
-      color: #484848;
-    }
-  </style>
+    <title>Change H1 Text</title>
 </head>
 <body>
-  <h1 id="balance">£0.00</h1>
-  <input type="number" id="balanceInput" placeholder="Enter your balance">
-  <p id="days-left"></p>
-  <p id="dailyBalance"><b>Daily allowance: £0.00</p>
-  <p id="lastUpdated"></p>
-  <script src="app.js"></script>
+
+<p id="dailyBudget"></p>
+<p id="monthDay"></p>
+<p id="targetBalance"></p>
+<p id="actualBalance"></p>
+<p id="spent"></p>
+<p id="delta"></p>
+<p id="left"></p>
+
+<script>
+// Creating a variable with a number
+var dailyBudget = 1000 / 31 ;
+var formattedCurrency = dailyBudget.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });
+var monthDay = 28
+
+var targetBalance = dailyBudget * monthDay
+var formattedTargetBalance = targetBalance.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });
+
+var actualBalance = 85.50
+var spent = 1000 - actualBalance
+var delta = targetBalance - spent
+var left = targetBalance - spent
+
+// Changing the text of the h1 element
+document.getElementById("dailyBudget").innerText = "Daily Budget:  " + formattedCurrency;
+document.getElementById("monthDay").innerText =  monthDay + "th July";
+document.getElementById("targetBalance").innerText = "Target: " + formattedTargetBalance
+
+document.getElementById("actualBalance").innerText = "Current Balance: " + actualBalance
+document.getElementById("spent").innerText = "Spent: " + spent
+document.getElementById("delta").innerText = "Differance: " + delta
+document.getElementById("left").innerText = "Left to spend: " + left
+
+
+</script>
+
 </body>
 </html>
