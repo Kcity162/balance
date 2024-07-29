@@ -1,12 +1,7 @@
 [
     {
-      "value":"176",
+      "Balance": "176",
       "title":"Sales",
       "subtitle":"Today"
-    },
-    {
-      "value":"194",
-      "title":"Sales",
-      "subtitle":"Yesterday"
     }
   ]
