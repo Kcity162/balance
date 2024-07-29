@@ -1,7 +1,8 @@
 [
     {
-      "Balance": "176",
-      "title":"Sales",
-      "subtitle":"Today"
+      "currentBalance": 500,
+      "currentTarget":500,
+      "totalSpent":500,
+      "monthBudget":1000
     }
   ]
