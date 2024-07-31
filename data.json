@@ -1,7 +1,18 @@
 [
     {
-      "currentBalance": 45.21,
-      "currentTarget": 904,
+      "totalMonthTarget": 3,
+      "totalRollingTarget": 4,
+      "totalSpent": 5,
+      "totalBalance": 6,
+      "totalDif": 7,
+
+      "varMonthTarget": 9,
+      "varRollingTarget": 10,
+      "varSpent": 11;
+      "varBalance": 12,
+      "varDif": 13,
+      
+      "totalTarget": 904,
       "differance": -11.50,
       "totalSpent": 913.06,
       "monthBudget": 1000,
