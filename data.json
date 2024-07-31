@@ -9,7 +9,7 @@
         "varRollingTarget": 10,
         "varSpent": 975.85,
         "varBalance": 24.15,
-        "varDif": "-£1 vs var target",
+        "varDif": "-£1 vs target",
         "fixedMonthTarget": 15,
         "fixedRollingTarget": 16,
         "fixedSpent": 17,
