@@ -1,25 +1,22 @@
 [
     {
-      "totalMonthTarget": 3,
-      "totalRollingTarget": 4,
-      "totalSpent": 5,
-      "totalBalance": 6,
-      "totalDif": 7,
-
-      "varMonthTarget": 9,
-      "varRollingTarget": 10,
-      "varSpent": 11,
-      "varBalance": 12,
-      "varDif": 13,
-      
-      "fixedMonthTarget": 15,
-      "fixedRollingTarget": 16,
-      "fixedSpent": 17,
-      "fixedBalance": 18,
-      "fixedDif": 19,
-
-      "currentMonth": "July",
-      "daysRemaining": 2,
-      "totalSaveings" 23,
+        "totalMonthTarget": 3,
+        "totalRollingTarget": 4,
+        "totalSpent": 5,
+        "totalBalance": 6,
+        "totalDif": 7,
+        "varMonthTarget": 9,
+        "varRollingTarget": 10,
+        "varSpent": 11,
+        "varBalance": 12,
+        "varDif": 13,
+        "fixedMonthTarget": 15,
+        "fixedRollingTarget": 16,
+        "fixedSpent": 17,
+        "fixedBalance": 18,
+        "fixedDif": 19,
+        "currentMonth": "July",
+        "daysRemaining": 2,
+        "totalSavings": 23
     }
-  ]
+]
