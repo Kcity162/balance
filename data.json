@@ -12,10 +12,13 @@
       "varBalance": 12,
       "varDif": 13,
       
-      "totalTarget": 904,
-      "differance": -11.50,
-      "totalSpent": 913.06,
-      "monthBudget": 1000,
+      "fixedMonthTarget": 15,
+      "fixedRollingTarget": 16,
+      "fixedSpent": 17,
+      "fixedBalance": 18,
+      "fixedDif": 19,
+
+        
       "daysRemaining": 2
     }
   ]
