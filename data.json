@@ -1,22 +1,6 @@
 [
     {
-        "totalMonthTarget": 3,
-        "totalRollingTarget": 4,
-        "totalSpent": 5,
-        "totalBalance": 6,
-        "totalDif": 7,
-        "varMonthTarget": 1000,
-        "varRollingTarget": 10,
-        "varSpent": 45.44,
-        "varBalance": 959,
-        "varDif": "-£15 of target",
-        "fixedMonthTarget": 3500,
-        "fixedRollingTarget": 16,
-        "fixedSpent": 0,
-        "fixedBalance": 1725,
-        "fixedDif": "On target",
-        "currentMonth": "July",
-        "daysRemaining": 2,
-        "totalSavings": 23
+        "varBalance": 557,
+        "varDif": "-£15 of target"
     }
 ]
