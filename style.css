@@ -16,13 +16,12 @@
 #spendingHistoryHeader{
     font-size: x-small;
     color: slategrey;
-    margin-bottom: 16%;
 }
 
-#spendingEntry{
+.spendingEntry{
     font-size: x-small;
     color: slategrey;
-    margin-bottom: 16%;
+    margin-bottom: 5%;
 }
 
 
@@ -34,6 +33,21 @@
     padding: 3px;
     width: 400px;
     background-color:rgb(113, 202, 113);
+    max-width: 100%;
+    input{
+      border: none;
+      appearance: none;
+    }
+  }
+
+  .want{
+    
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 3px;
+    width: 400px;
+    background-color:rgb(174, 17, 43);
     max-width: 100%;
     input{
       border: none;

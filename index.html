@@ -17,12 +17,15 @@
             </div>
         <!-- User inputs the spending they want to log -->
         <div class="input-section">
+            <input type="text" name="note" id="note">
+            <p></p>
             <input type="number" name="dailySpend" id="dailySpend" placeholder="£0">
             <br>
             <input type="radio" name="catagory" id="catagory" value="Need">
             <label for="catagory">Want</label>
             <input type="radio" name="catagory" id="catagory" value="Need">
             <label for="catagory">Need</label>
+            
             <p>
             <button id="addSpendBtn" type="button">Add Spend</button>
         </div>
@@ -30,9 +33,11 @@
         <br>
         <br>
         <p id="spendingHistoryHeader">Spent today...</p>
-        <ul>
-            <li id="spendingEntry">Test <span class="need">Need</span></li>
-        </ul>
+        <p id="spendingEntry0" class="spendingEntry">   <span class="need">Need</span></p>
+        <p id="spendingEntry1" class="spendingEntry">   <span class="need">Need</span></p>
+        <p id="spendingEntry2" class="spendingEntry">   <span class="need">Need</span></p>
+        <p id="spendingEntry3" class="spendingEntry">   <span class="need">Need</span></p>
+        <p id="spendingEntry4" class="spendingEntry">   <span class="need">Need</span></p>
 
 
 
