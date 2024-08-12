@@ -1,42 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Change H1 Text</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minty - Spending Tracker</title>
 </head>
 <body>
-
-    <p id="monthDay"></p>
-    <p id="targetBalance"></p>
-    <p id="spent"></p>
-    <p id="delta"></p>
-    <p id="left"></p>
-    <p id="actualBalance"></p>
-    <p id="dailyBudget"></p>
-
-<script>
-// Creating a variable with a number
-var dailyBudget = 1000 / 31 ;
-var formattedCurrency = dailyBudget.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });
-var monthDay = 4
-
-var targetBalance = dailyBudget * monthDay
-var formattedTargetBalance = targetBalance.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });
-
-var actualBalance = 1000 - 250
-var spent = 1000 - actualBalance
-var delta = targetBalance - spent
-var left = 1000 - spent
-
-// Changing the text of the h1 element
-//document.getElementById("dailyBudget").innerText = "Daily Budget:  " + formattedCurrency;
-document.getElementById("monthDay").innerText =  monthDay + "th July";
-document.getElementById("targetBalance").innerText = "Target: " + formattedTargetBalance
-
-//document.getElementById("actualBalance").innerText = "Current Balance: " + actualBalance
-document.getElementById("spent").innerText = "Spent: " + spent
-document.getElementById("delta").innerText = "Differance: " + delta
-document.getElementById("left").innerText = "Left to spend: " + left
-</script>
-
+    <h1>This is test</h1>
 </body>
 </html>
