@@ -10,19 +10,29 @@
     <div> 
         <div class="balance-section">
             <h2>Balance: £<span id="balance">0.00</span></h2>
-        </div>
+            <div id="dailyBudgetHeader">Daily budget: £ £<span id="dailyBudget">0.00</span></div>
+       
+            <div id="dailySpendHeader">Spent today: £ £<span id="dailySpent">0.00</span></div>
+       
+            </div>
+        <!-- User inputs the spending they want to log -->
         <div class="input-section">
-            <input type="number" name="dailySpend" id="dailySpend" placeholder="Amount spent">
+            <input type="number" name="dailySpend" id="dailySpend" placeholder="£0">
             <br>
             <input type="radio" name="catagory" id="catagory" value="Need">
             <label for="catagory">Want</label>
             <input type="radio" name="catagory" id="catagory" value="Need">
             <label for="catagory">Need</label>
-            <p><br><br></p>
-            <button type="button">Add Spend</button>
-       
+            <p>
+            <button id="addSpendBtn" type="button">Add Spend</button>
         </div>
-
+        <br>
+        <br>
+        <br>
+        <p id="spendingHistoryHeader">Spent today...</p>
+        <ul>
+            <li id="spendingEntry">Test <span class="need">Need</span></li>
+        </ul>
 
 
 
