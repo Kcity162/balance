@@ -8,6 +8,10 @@ var spend_data = [  '£13 <tag class="need">Need</tag> <note class="note">This i
                     '£2.37 <tag class="need">Need</tag>  <note class="note">Another note note</note>',
                     '£89.78 <tag class="want">Want</tag>  <note class="note">This is a note</note>']; //An empty list or dictionary to store the daily spend, categorized by the user.
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });                 
 
 
 document.getElementById('spendingEntry0').innerHTML = spend_data[0].toString();

@@ -4,47 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minty - Spending Tracker</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  
+    <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+              
 </head>
-<body>
-    <div> 
-        <div class="balance-section">
-            <h2>Balance: £<span id="balance">0.00</span></h2>
-            <div id="dailyBudgetHeader">Daily budget: £ £<span id="dailyBudget">0.00</span></div>
-       
-            <div id="dailySpendHeader">Spent today: £ £<span id="dailySpent">0.00</span></div>
-       
-            </div>
-        <!-- User inputs the spending they want to log -->
-        <div class="input-section">
-            <input type="text" name="note" id="note">
-            <p></p>
-            <input type="number" name="dailySpend" id="dailySpend" placeholder="£0">
-            <br>
-            <input type="radio" name="catagory" id="catagory" value="Need">
-            <label for="catagory">Want</label>
-            <input type="radio" name="catagory" id="catagory" value="Need">
-            <label for="catagory">Need</label>
+<body style="background-color: rgb(179, 179, 179);">
+    <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+
+            <div class="card-content">
+                <h4>Balance: £1,000</h4>
+                <span class="card-title ">Daily budget: £32</span>
+                <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="spent" type="number" data-length="10">
+                          <label for="spent">Amount spent</label>
+                        </div>
+                        
+                        <div class="input-field col s12">
+                          <input id="spent" type="text" data-length="10">
+                          <label for="spent">Note</label>
+                        </div>
+                        <div>
+                            
+                        <a class="waves-effect waves-light btn col s6 red">Want</a>
+                        <a class="waves-effect waves-light btn col s6 green">Need</a>
+
+                        </div>
+                        
+                    </form>
+                  </div>
+                </div>
             
-            <p>
-            <button id="addSpendBtn" type="button">Add Spend</button>
+            </div>
+            <div class="card-action">
+                <div class="collection">
+                    <p href="#!" class="collection-item"><span class="badge"><b>£56.87</b></span><b>Total spent today</b></p>
+                    <p href="#!" class="collection-item"><span class="need badge green" style="color: white;">£1.67</span>Milk and bread</p>
+                    <p href="#!" class="collection-item"><span class="want badge red" style="color: white;">£32</span>Rolls skates</p>
+                    <p href="#!" class="collection-item"><span class="want badge red" style="color: white;">£12.25</span>Sweets</p>
+                    <p href="#!" class="collection-item"><span class="need badge green" style="color: white;">£14</span>Breakfast</p>
+                  </div>
+                
+            </div>
+          </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <p id="spendingHistoryHeader">Spent today...</p>
-        <p id="spendingEntry0" class="spendingEntry">   <span class="need">Need</span></p>
-        <p id="spendingEntry1" class="spendingEntry">   <span class="need">Need</span></p>
-        <p id="spendingEntry2" class="spendingEntry">   <span class="need">Need</span></p>
-        <p id="spendingEntry3" class="spendingEntry">   <span class="need">Need</span></p>
-        <p id="spendingEntry4" class="spendingEntry">   <span class="need">Need</span></p>
-
-
-
-    </div>
-
-
-
+      </div>
+               
 
 
 
