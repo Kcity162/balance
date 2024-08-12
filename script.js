@@ -7,7 +7,7 @@ var spend_data = ['Item 1', 'Item 2']; //An empty list or dictionary to store th
 
 
 function fistFunction() { 
-    document.getElementById('test').innerHTML = category ;
+    document.getElementById('balance').innerHTML = balance ;
 }
 
 fistFunction();
