@@ -29,9 +29,4 @@ const requestOptions = {
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.error(error));
-  
-    console.log(requestOptions);
-    console.log(response);
-    console.log(result);
-    console.log(error);
 
