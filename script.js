@@ -25,7 +25,7 @@ const requestOptions = {
     redirect: "follow",
   };
   
-  fetch("https://dakboard.com/api/2/metrics/metrics?api_key=16d9ae10d743ed357f8bd33c8d9096cd", requestOptions)
+  fetch("https://dakboard.com/api/2/metrics/balance?api_key=16d9ae10d743ed357f8bd33c8d9096cd", requestOptions)
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.error(error));
