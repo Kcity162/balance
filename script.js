@@ -20,25 +20,15 @@ var spend_data = [  '£13 <tag class="need">Need</tag> <note class="note">This i
 
 
 
-const myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
-
-const raw = JSON.stringify([
-  {
-    "timestamp": "2023-01-21",
-    "value": 9898
-  }
-]);
-
 const requestOptions = {
-  method: "POST",
-  headers: myHeaders,
-  body: raw,
-  redirect: "follow",
-  mode: 'no-cors' // no-cors mode
-};
-
-fetch("https://dakboard.com/api/2/metrics/balance?api_key=16d9ae10d743ed357f8bd33c8d9096cd", requestOptions)
-  .then((response) => response.text())
-  .then((result) => console.log(result))
-  .catch((error) => console.error(error));
+    method: "GET",
+    redirect: "follow"
+  };
+  
+  try {
+    const response = await fetch("https://dakboard.com/api/2/metrics/balance?api_key=16d9ae10d743ed357f8bd33c8d9096cd", requestOptions);
+    const result = await response.text();
+    console.log(result)
+  } catch (error) {
+    console.error(error);
+  };
