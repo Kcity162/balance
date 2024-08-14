@@ -8,15 +8,37 @@ var spend_data = [  '£13 <tag class="need">Need</tag> <note class="note">This i
                     '£2.37 <tag class="need">Need</tag>  <note class="note">Another note note</note>',
                     '£89.78 <tag class="want">Want</tag>  <note class="note">This is a note</note>']; //An empty list or dictionary to store the daily spend, categorized by the user.
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-  });                 
+               
 
 
-document.getElementById('spendingEntry0').innerHTML = spend_data[0].toString();
-document.getElementById('spendingEntry1').innerHTML = spend_data[1].toString();
-document.getElementById('spendingEntry2').innerHTML = spend_data[2].toString();
-document.getElementById('spendingEntry3').innerHTML = spend_data[3].toString();
-document.getElementById('spendingEntry4').innerHTML = spend_data[4].toString();
+//document.getElementById('spendingEntry0').innerHTML = spend_data[0].toString();
+//document.getElementById('spendingEntry1').innerHTML = spend_data[1].toString();
+//document.getElementById('spendingEntry2').innerHTML = spend_data[2].toString();
+//document.getElementById('spendingEntry3').innerHTML = spend_data[3].toString();
+//document.getElementById('spendingEntry4').innerHTML = spend_data[4].toString();
 
+
+
+
+const myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+const raw = JSON.stringify([
+  {
+    "timestamp": "2023-01-21",
+    "value": 9898
+  }
+]);
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  body: raw,
+  redirect: "follow",
+  mode: 'no-cors' // no-cors mode
+};
+
+fetch("https://dakboard.com/api/2/metrics/balance?api_key=16d9ae10d743ed357f8bd33c8d9096cd", requestOptions)
+  .then((response) => response.text())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
