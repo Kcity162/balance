@@ -1,4 +1,4 @@
-var name = 'Lilly';
+/*var name = 'Lilly';
 var balance = 550; //The user's starting balance.
 var target_budget = 1000; //The total budget the user has set for the month.
 var days_in_month = 31; //The total number of days in the current month.
@@ -15,7 +15,9 @@ var spend_data = [  '£13 <tag class="need">Need</tag> <note class="note">This i
 //document.getElementById('spendingEntry1').innerHTML = spend_data[1].toString();
 //document.getElementById('spendingEntry2').innerHTML = spend_data[2].toString();
 //document.getElementById('spendingEntry3').innerHTML = spend_data[3].toString();
-//document.getElementById('spendingEntry4').innerHTML = spend_data[4].toString();
+//document.getElementById('spendingEntry4').innerHTML = spend_data[4].toString(); */
+
+
 
 
 const requestOptions = {
@@ -28,4 +30,8 @@ const requestOptions = {
     .then((result) => console.log(result))
     .catch((error) => console.error(error));
   
-console.log('test');
+    console.log(requestOptions);
+    console.log(response);
+    console.log(result);
+    console.log(error);
+
