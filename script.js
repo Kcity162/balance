@@ -18,17 +18,13 @@ var spend_data = [  '£13 <tag class="need">Need</tag> <note class="note">This i
 //document.getElementById('spendingEntry4').innerHTML = spend_data[4].toString();
 
 
-
-
 const requestOptions = {
     method: "GET",
-    redirect: "follow"
+    redirect: "follow",
   };
   
-  try {
-    const response = await fetch("https://dakboard.com/api/2/metrics/balance?api_key=16d9ae10d743ed357f8bd33c8d9096cd", requestOptions);
-    const result = await response.text();
-    console.log(result)
-  } catch (error) {
-    console.error(error);
-  };
+  fetch("https://dakboard.com/api/2/metrics/metrics?api_key=16d9ae10d743ed357f8bd33c8d9096cd", requestOptions)
+    .then((response) => response.text())
+    .then((result) => console.log(result))
+    .catch((error) => console.error(error));
+  
